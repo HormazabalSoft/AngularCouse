@@ -9,7 +9,6 @@ export class AppComponent {
 
   public title: string = 'Mi primera app de Angular';
   public counter: number = 10;
-
   increaseBy(): void {
     this.counter += 1;
   }
@@ -21,5 +20,4 @@ export class AppComponent {
   resetCounter(): void {
     this.counter = 10;
   }
-
 }
