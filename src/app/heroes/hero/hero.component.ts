@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
 
+  public name: string = 'IronMan';
+  public age: number = 45;
+
+
+
 }
