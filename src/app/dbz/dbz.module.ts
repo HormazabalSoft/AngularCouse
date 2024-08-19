@@ -4,19 +4,17 @@ import { MainPageComponent } from './pages/main-page.component';
 import { ListComponent } from './components/list/list.component';
 import { AddCharacterComponent } from './components/add-character/add-character.component';
 
-
-
 @NgModule({
   declarations: [
     MainPageComponent,
     ListComponent,
     AddCharacterComponent
   ],
-  imports: [
-    CommonModule//is necesary to use the ngs, etc
-  ],
   exports: [
     MainPageComponent
-  ]
+  ],
+  imports: [
+    CommonModule  // This is necessary to use common directives like *ngFor, *ngIf, etc.
+  ],
 })
 export class DbzModule { }
