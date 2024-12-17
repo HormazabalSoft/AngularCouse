@@ -6,6 +6,7 @@ import { AddCharacterComponent } from './components/add-character/add-character.
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
+  //each component you add, you must declarate
   declarations: [
     MainPageComponent,
     ListComponent,
