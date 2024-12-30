@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Card } from '../../interfaces/card';
+import { Gif } from '../../interfaces/gifs.interfaces';
 
 @Component({
   selector: 'app-card-list',
@@ -8,6 +9,9 @@ import { Card } from '../../interfaces/card';
 })
 export class CardListComponent implements OnInit {
   cards: Card[] = [];
+
+  @Input()
+  public gifs:Gif[] = [];
 
   ngOnInit(): void {
     this.loadCards();

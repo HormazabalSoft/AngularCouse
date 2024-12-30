@@ -21,7 +21,7 @@ export class GifsService {
    * Arreglo privado que almacena el historial de etiquetas (tags) utilizadas para buscar GIFs.
    * Solo se puede acceder a través del getter `tagsHistory`.
    */
-  private gifList:Gif[] = [];
+  public gifList:Gif[] = [];
   private _tagsHistory: string[] = [];
   private apiKey: string = 'hAAHzvLorX86UfmyDm9dPxyAnQTvulzn';
   private serviceUrl: string = 'https://api.giphy.com/v1/gifs'
