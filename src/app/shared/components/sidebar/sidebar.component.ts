@@ -15,7 +15,7 @@ export class SidebarComponent {
     return this.gifsService.tagsHistory;
   }
 
-  Onclick(gifTag: string){
+  searchTag(gifTag: string){
 
     this.gifsService.searchTag(gifTag);
 
