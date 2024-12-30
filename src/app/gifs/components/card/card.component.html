@@ -1,15 +1,22 @@
-<div class="card mb-2 text-center bg-dark">
+<div class="card mb-2 text-center bg-dark text-center">
 
-  <!-- Todo: Crear IMagen-->
-  <img
+  <shared-lazy-image
+    [url]="gif.images.downsized_medium.url"
+  ></shared-lazy-image>
+
+  <!--
+    <img
     [src]="gif.images.downsized_medium.url"
-    [alt]="gif.title"
+    [alt]="gif.title || 'No name'"
     class="card-img-top"
     >
+  -->
+  <!-- Todo: Crear IMagen-->
+
 
   <div class="card-body text-white">
     <p class="card-text">
-      {{gif.title}}
+      {{gif.title || 'No title'}}
     </p>
   </div>
 </div>
