@@ -3,9 +3,10 @@ import { CountriesService } from '../../services/countries.service';
 import { Country } from '../../interfaces/country';
 
 @Component({
-  selector: 'app-by-capital-page',
-  templateUrl: './by-capital-page.component.html',
-  styles: ``
+    selector: 'app-by-capital-page',
+    templateUrl: './by-capital-page.component.html',
+    styles: ``,
+    standalone: false
 })
 export class ByCapitalPageComponent {
 
